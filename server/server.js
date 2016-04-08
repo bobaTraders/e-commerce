@@ -19,7 +19,9 @@ app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
 
 
-/* All routes are in controller/routes.js */
+/*
+  **** All routes are in controller/routes.js ****
+*/
 routes(app);
 
 app.listen(port, function() {
