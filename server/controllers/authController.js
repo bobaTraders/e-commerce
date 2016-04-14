@@ -6,14 +6,17 @@ module.exports = {
     var user = req.body;
     User.users.get(user, function(err, results){
       if (!err) {
-        var token = jwt.encode(user, 'secret');
-        res.json({token: token});
+        // var token = jwt.encode(user, 'secret');
+        // res.json({token: token});
+        // modify sign-in to send entire object
+        res.json(results);
       }
       else {
         res.json(err);
       }
     });
   },
+
   signup: function (req, res, next) {
     var user = req.body;
     console.log('User',user);

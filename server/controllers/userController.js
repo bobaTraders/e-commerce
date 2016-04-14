@@ -1,3 +1,6 @@
+// do we need this?
+
+
 var User = require('./userModel.js');
 
 module.exports = {
