@@ -1,4 +1,4 @@
-var app = angular.module('commerce', []);
-app.controller('checkOut', function($scope) {
+// var app = angular.module('commerce', []);
+// app.controller('checkOut', function($scope) {
 
-});
+// });

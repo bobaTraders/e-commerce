@@ -1,3 +1,19 @@
-<div ng-controller='checkOut'>
-  
+<div ng-controller='SearchController'>
+  <table>
+    <caption>Check Out Page</caption>
+<!--     <thead>
+      <tr>
+        <th>Item ID</th>
+        <th>Item Name</th>
+        <th>Item Description</th>
+        <th></th>
+      </tr>
+    </thead> -->
+    <tbody>
+    <!-- items live in homepage ctrl!!!!! -->
+      <tr ng-repeat='item in checkOutItems'>
+        <td>{{item}}</td>
+      </tr>
+    </tbody>
+  </table>
 </div>
