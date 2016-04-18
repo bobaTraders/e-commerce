@@ -3,7 +3,7 @@
 <h3>Please sign up here...</h3>
 
 <md-content layout-gt-sm="row" layout-padding>
- <form class = "form-register" name = "signupForm" ng-submit = 'signup()'>
+  <form class = "form-register" name = "signupForm" ng-submit = 'signup()'>
     <md-input-container flex>
       <label>Username</label>
       <input type="text" ng-model = 'userform.name' required/>
@@ -31,10 +31,10 @@
   <md-content layout-gt-sm="row" layout-padding>
     <h3>Address:</h3>
 
-      <md-input-container flex-gt-sm>
-        <label>Street number</label>
-        <input type="text" ng-model = 'userform.address.number' required/>
-      </md-input-container>
+    <md-input-container flex-gt-sm>
+      <label>Street number</label>
+      <input type="text" ng-model = 'userform.address.number' required/>
+    </md-input-container>
 
     <md-input-container flex-gt-sm>
       <label>Street</label>
@@ -60,28 +60,24 @@
       <input type="text" ng-model = 'userform.address.postalcode' required/>
     </md-input-container>
 
-  
   </md-content>
 
-  <!-- <md-button type = "submit" ng-disabled="form-register.$invalid" class="md-raised md-primary btn done">Signup </md-button> -->
-
-      <div class="space-top text-center">
-          <md-button type='submit' ng-disabled="form-register.$invalid" class="md-raised md-primary btn done">
-            <i class="material-icons left"></i> Sign up
-          </md-button>
-        </div>
-
+  <div class="space-top text-center">
+    <md-button type='submit' ng-disabled="form-register.$invalid" class="md-raised md-primary btn done">
+      <i class="material-icons left"></i> Sign up
+    </md-button>
   </div>
 
+  </div>
   </form>
 
-    <md-button class="md-primary md-fab md-fab-top-right md-hue-2" style='margin-top: 50px;'>
-      <a href="#/homepage" style = style='font-size: 85%; color: white'>Home</a>
-    </md-button>
+  <md-button class="md-primary md-fab md-fab-top-right md-hue-2" style='margin-top: 50px;'>
+    <a href="#/homepage" style = style='font-size: 85%; color: white'>Home</a>
+  </md-button>
 
-    <md-button class="md-primary md-fab md-fab-top-right md-hue-1" style='margin-top: 50px; margin-right: 80px; float: left;'>
-      <a href="#/signin" style='font-size: 85%; color: white'>Signup</a>
-    </md-button>
+  <md-button class="md-primary md-fab md-fab-top-right md-hue-1" style='margin-top: 50px; margin-right: 80px; float: left;'>
+    <a href="#/signin" style='font-size: 85%; color: white'>Signin</a>
+  </md-button>
 
 </div>
 
