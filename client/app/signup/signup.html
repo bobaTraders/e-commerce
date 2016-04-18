@@ -1,6 +1,7 @@
 
 <div id = "signup" layout="column" ng-cloak class="md-inline-form" style='padding: 40px;'> 
 <h3>Please sign up here...</h3>
+
 <md-content layout-gt-sm="row" layout-padding>
  <form class = "form-register" name = "signupForm" ng-submit = 'signup()'>
     <md-input-container flex>
@@ -28,7 +29,8 @@
   </md-content>
 
   <md-content layout-gt-sm="row" layout-padding>
-    <div><h3>Address</h3></div>
+    <h3>Address:</h3>
+
       <md-input-container flex-gt-sm>
         <label>Street number</label>
         <input type="text" ng-model = 'userform.address.number' required/>
@@ -47,7 +49,7 @@
    <md-input-container class="md-block" flex>
       <label>State</label>
       <md-select ng-model="userform.address.state">
-        <md-option ng-repeat="state in states" value="{{state.abbrev}}" flex="50">
+        <md-option ng-repeat="state in states" value="{{state.abbrev}}" flex="25">
           {{state.abbrev}}
         </md-option>
       </md-select>
@@ -57,24 +59,27 @@
       <label>Postal code</label>
       <input type="text" ng-model = 'userform.address.postalcode' required/>
     </md-input-container>
+
   
   </md-content>
 
   <md-button type = "submit" ng-disabled="form-register.$invalid" class=" md-primary md-accent md-raised md-hue-1">Signup </md-button>
-<!--     
-    <div class="space-top text-center">
-      <button ng-disabled="form-register.$invalid">Sign up</button>
-    </div>  -->
 
-    <md-button class="md-fab md-fab-top-right md-hue-1" style='position: fixed;'>
-      <a href="#/homepage">Home</a>
+
+  </div>
+
+  </form>
+
+    <md-button class="md-primary md-fab md-fab-top-right md-hue-2" style='margin-top: 50px;'>
+      <a href="#/homepage" style = style='font-size: 85%; color: white'>Home</a>
     </md-button>
 
-    <md-button class="md-fab md-fab-bottom-left md-hue-3" style='position: fixed;'>
-      <a href="#/signin">Signin</a>
+    <md-button class="md-primary md-fab md-fab-top-right md-hue-1" style='margin-top: 50px; margin-right: 80px; float: left;'>
+      <a href="#/signin" style='font-size: 85%; color: white'>Signup</a>
     </md-button>
-   </div>
-
- </form>
 
 </div>
+
+
+
+
